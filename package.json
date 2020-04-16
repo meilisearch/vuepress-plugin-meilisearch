@@ -1,0 +1,12 @@
+{
+  "name": "vuepress-plugin-meilisearch",
+  "version": "0.0.1",
+  "description": "Relevant and typo tolerant search bar for your Vuepress",
+  "main": "index.js",
+  "repository": "git@github.com:meilisearch/vuepress-plugin-meilisearch.git",
+  "author": "Clementine Urquizar <clementine@meilisearch.com>",
+  "license": "MIT",
+  "dependencies": {
+    "docs-searchbar.js": "^1.1.1"
+  }
+}
