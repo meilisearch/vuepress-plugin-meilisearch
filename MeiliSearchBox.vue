@@ -8,71 +8,96 @@
       id="meilisearch-search-input"
       class="search-query"
       :placeholder="placeholder"
-    />
+    >
   </form>
 </template>
 
 <script>
-console.log('In meilisearch component')
-console.log(HOST_URL)
-console.log(API_KEY)
-console.log(INDEX_UID)
 export default {
-  name: "MeiliSearchBox",
-  data() {
+  name: 'MeiliSearchBox',
+  data () {
     return {
-      placeholder: undefined,
-    };
+      placeholder: undefined
+    }
   },
   watch: {
-    options(newValue) {
-      this.update(newValue);
-    },
+    options (newValue) {
+      this.update(newValue)
+    }
   },
-  mounted() {
-    let options = {
+  mounted () {
+    const options = {
       hostUrl: HOST_URL,
       apiKey: API_KEY,
-      indexUid: INDEX_UID
+      indexUid: INDEX_UID,
+      meilisearchOptions: {
+        limit: MAX_SUGGESTIONS || this.$site.themeConfig.searchMaxSuggestions || 5,
+        cropLength: CROP_LENGTH
+      },
+      autocompleteOptions: {
+        keyboardShortcuts: HOT_KEYS
+      }
     }
-    this.initialize(options);
-    this.placeholder = this.$site.themeConfig.searchPlaceholder || "";
+    this.initialize(options)
+    this.placeholder = PLACEHOLDER || this.$site.themeConfig.searchPlaceholder || ''
   },
 
   methods: {
-    initialize(userOptions) {
+    initialize (userOptions) {
       Promise.all([
         import(
-          /* webpackChunkName: "docs-searchbar" */ "docs-searchbar.js/dist/cdn/docs-searchbar.min.js"
+          /* webpackChunkName: "docs-searchbar" */ 'docs-searchbar.js/dist/cdn/docs-searchbar.min.js'
         ),
         import(
-          /* webpackChunkName: "docs-searchbar" */ "docs-searchbar.js/dist/cdn/docs-searchbar.min.css"
-        ),
+          /* webpackChunkName: "docs-searchbar" */ 'docs-searchbar.js/dist/cdn/docs-searchbar.min.css'
+        )
       ]).then(([docsSearchBar]) => {
-        docsSearchBar = docsSearchBar.default;
+        docsSearchBar = docsSearchBar.default
         const input = Object.assign({}, userOptions, {
-          inputSelector: "#meilisearch-search-input",
-          meilisearchOptions: { cropLength: 40 },
+          inputSelector: '#meilisearch-search-input',
           handleSelected: (input, event, suggestion) => {
-            const { pathname, hash } = new URL(suggestion.url);
-            const routepath = pathname.replace(this.$site.base, "/");
-            this.$router.push(`${routepath}${hash}`);
-          },
-        });
-        docsSearchBar(input);
-      });
+            const { pathname, hash } = new URL(suggestion.url)
+            const routepath = pathname.replace(this.$site.base, '/')
+            this.$router.push(`${routepath}${hash}`)
+          }
+        })
+        docsSearchBar(input)
+      })
     },
 
-    update(options) {
+    update (options) {
       this.$el.innerHTML =
-        '<input id="meilisearch-search-input" class="search-query">';
-      this.initialize(options);
-    },
-  },
-};
+        '<input id="meilisearch-search-input" class="search-query">'
+      this.initialize(options)
+    }
+  }
+}
 </script>
 
 <style lang="stylus">
+.search-box
+  display inline-block
+  position relative
+  margin-right 1rem
+  input
+    cursor text
+    width 10rem
+    height: 2rem
+    color lighten($textColor, 25%)
+    display inline-block
+    border 1px solid darken($borderColor, 10%)
+    border-radius 2rem
+    font-size 0.9rem
+    line-height 2rem
+    padding 0 0.5rem 0 2rem
+    outline none
+    transition all .2s ease
+    &:focus
+      cursor auto
+      border-color $accentColor
+    background #fff url(assets/search.svg) 0.6rem 0.5rem no-repeat
+    background-size 1rem
+
 .meilisearch-search-wrapper
   & > span
     vertical-align middle

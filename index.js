@@ -1,10 +1,6 @@
 const path = require('path')
 
 module.exports = (options) => {
-  console.log('Vuepress-meilisearch-plugin is starting...');
-  console.log(options)
-  // console.log(__dirname)
-  // console.log(path)
   return {
     alias: {
       '@SearchBox': path.resolve(__dirname, 'MeiliSearchBox.vue')
@@ -12,10 +8,11 @@ module.exports = (options) => {
     define: {
       HOST_URL: options.hostUrl || null,
       API_KEY: options.apiKey || null,
-      INDEX_UID: options.indexUid || null
-      // crop
-      // max suggestion
-      // keyshots
+      INDEX_UID: options.indexUid || null,
+      PLACEHOLDER: options.placeholder || null,
+      MAX_SUGGESTIONS: options.maxSuggestions || null,
+      HOT_KEYS: options.hotKeys || ['s', '/'],
+      CROP_LENGTH: options.cropLength || 30
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "Test environment for vuepress-plugin-meilisearch",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev"
+  },
+  "dependencies": {
+    "vuepress": "^1.4.1",
+    "vuepress-plugin-meilisearch": "^0.0.6"
+  }
+}
