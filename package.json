@@ -1,12 +1,33 @@
 {
   "name": "vuepress-plugin-meilisearch",
-  "version": "0.0.1",
+  "version": "0.10.0",
   "description": "Relevant and typo tolerant search bar for your Vuepress",
+  "author": "Clémentine Urquizar <clementine@meilisearch.com>",
+  "scripts": {
+    "lint": "eslint '{.,tests}/**/*.{vue,js}'",
+    "lint:fix": "yarn lint --fix",
+    "serve": "yarn --cwd ./playground install && yarn --cwd ./playground dev",
+    "test": "jest"
+  },
   "main": "index.js",
-  "repository": "git@github.com:meilisearch/vuepress-plugin-meilisearch.git",
-  "author": "Clementine Urquizar <clementine@meilisearch.com>",
-  "license": "MIT",
   "dependencies": {
-    "docs-searchbar.js": "^1.1.1"
-  }
+    "docs-searchbar.js": "^1.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-unit-jest": "^4.3.1",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "jest": "^25.4.0",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "license": "MIT",
+  "repository": "git@github.com:meilisearch/vuepress-plugin-meilisearch.git"
 }

@@ -1,0 +1,6 @@
+scripts
+.editorconfig
+.eslintrc.js
+.github
+tests
+jest.config.js
