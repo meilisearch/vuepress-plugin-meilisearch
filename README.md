@@ -14,6 +14,7 @@
 </h4>
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/vuepresss-plugin-meilisearch"><img src="https://img.shields.io/npm/v/meilisearch.svg" alt="NPM version"></a>
   <a href="https://github.com/meilisearch/vuepress-plugin-meilisearch/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-informational" alt="License"></a>
   <a href="https://slack.meilisearch.com"><img src="https://img.shields.io/badge/slack-MeiliSearch-blue.svg?logo=slack" alt="Slack"></a>
 </p>
@@ -37,7 +38,7 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
   - [Your Scraper](#your-scraper)
 - [Development Workflow](#development-workflow)
 - [Related Repositories](#related-repositories)
-- [🤖 Compatibility with MeiliSearch](#-compatibility-with-meilisearch)
+- [Compatibility with MeiliSearch](#compatibility-with-meilisearch)
 
 ## Usage
 
@@ -78,7 +79,7 @@ module.exports = {
 }
 ```
 
-**WARNING**: Since the configuration file is public, we recommand to provide the MeiliSearch public key, which is enough to perform searches.<br>
+**WARNING**: Since the configuration file is public, we recommend providing the MeiliSearch public key, which is enough to perform searches.<br>
 Read more about [MeiliSearch authentication](https://docs.meilisearch.com/guides/advanced_guides/authentication.html#authentication).
 
 ### Customization
@@ -181,6 +182,6 @@ A GitHub Action will be triggered and push the package on [npm](https://www.npmj
 - [docs-searchBar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use vuepress.
 - [docs-scraper](https://github.com/meilisearch/docs-scraper): the scraper used to scrap websites pages and automatically index the content in MeiliSearch.
 
-## 🤖 Compatibility with MeiliSearch
+## Compatibility with MeiliSearch
 
 This plugin works for MeiliSearch `>=0.10`.
