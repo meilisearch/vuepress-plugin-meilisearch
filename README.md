@@ -23,36 +23,45 @@
 
 **MeiliSearch Vuepress** is a **MeiliSearch** plugin for Vuepress. **MeiliSearch** is a powerful, fast, open-source, easy to use and deploy search engine. Both searching and indexing are highly customizable. Features such as typo-tolerance, filters, and synonyms are provided out-of-the-box.
 
-This plugin is used in production on the [MeiliSearch documentation](https://docs.meilisearch.com/).
+If you don't use Vuepress for your documentation, but you still need a search bar, you might check out this [front-end SDK](https://github.com/meilisearch/docs-searchbar.js).
 
 ![MeiliSearch docs demo](assets/docs-searchbar-demo.gif).
+
+This plugin is used in production on the [MeiliSearch documentation](https://docs.meilisearch.com/).
 
 ## Table of Contents <!-- omit in toc -->
 
 - [Usage](#usage)
-  - [Run MeiliSearch](#run-meilisearch)
-  - [Basic usage](#basic-usage)
+  - [Before using the plugin](#before-using-the-plugin)
+  - [Installation](#installation)
+  - [Basic Configuration](#basic-configuration)
   - [Customization](#customization)
-- [Scrap your Content](#scrap-your-content)
-  - [Your MeiliSearch Instance](#your-meilisearch-instance)
-  - [Your Scraper](#your-scraper)
 - [Development Workflow](#development-workflow)
 - [Related Repositories](#related-repositories)
 - [Compatibility with MeiliSearch](#compatibility-with-meilisearch)
 
 ## Usage
 
-### Run MeiliSearch
+### Before using the plugin
 
-First of all, you need your Vuepress content to be scraped and pushed into a MeiliSearch instance.
+The goal of this plugin is to provide very easy integration of a search bar into your own Vuepress documentation. To make that possible, you need to gather your website content in advance, and index it in a MeiliSearch instance.
 
-This can be done in few steps. Read the [dedicated section](#scrap-your-content).
+Luckily, we provide all the tools that you need, and can help you through the whole process, if you follow [this guide](https://docs.meilisearch.com/resources/howtos/search_bar_for_docs.html) 🚀
 
-The host URL, the API key and the index UID you will provide in your configuration file are the credentials of this MeiliSearch instance.
+As a first introduction, you might only want to test this plugin without connecting it to your website.<br>
+You can do it by running the Vuepress playground provided in this repository:
 
-**Without running a MeiliSearch instance, the next steps will not work.**
+```bash
+$ yarn install
+$ yarn serve
+```
 
-### Basic usage
+Then, open your browser on the indicated URL and test the search bar 🙂
+
+The data comes from MeiliSearch documentation.<br>
+Type `create an indxe` to live the MeiliSearch experience with the [typo tolerance](https://docs.meilisearch.com/guides/advanced_guides/typotolerance.html).
+
+### Installation
 
 In your Vuepress project:
 
@@ -61,6 +70,8 @@ $ yarn add vuepress-plugin-meilisearch
 # or
 $ npm install vuepress-plugin-meilisearch
 ```
+
+### Basic Configuration
 
 In your `config.js` file:
 
@@ -102,28 +113,6 @@ module.exports = {
   ],
 }
 ```
-
-## Scrap your Content
-
-To use this plugin, your need:
-- a MeiliSearch instance running in production.
-- a scraping tool that scraps your Vuepress pages on regular bases.
-
-### Your MeiliSearch Instance
-
-This step has to be done on your side: MeiliSearch is open-source and can run on your own server! 😄
-
-Here is the [documentation to install and run MeiliSearch](https://docs.meilisearch.com/guides/advanced_guides/installation.html#installation).
-
-_A tutorial about how to run MeiliSearch in production is coming..._
-
-### Your Scraper
-
-We already provide a scraper for your website: [docs-scraper](https://github.com/meilisearch/docs-scraper).<br>
-This scraper is used in production on the [MeiliSearch documentation](https://docs.meilisearch.com/).
-
-All the steps to use it are detailed in the scraper repository.<br>
-You can easily run the scraper with Docker or in a GitHub Action. The best would be to run the scraper on each website deployment.
 
 ## Development Workflow
 
@@ -175,13 +164,17 @@ $ git tag vX.X.X
 $ git push --tag origin master
 ```
 
-A GitHub Action will be triggered and push the package on [npm](https://www.npmjs.com/package/vuepress-plugin-meilisearch).
+A GitHub Actions will be triggered and push the package on [npm](https://www.npmjs.com/package/vuepress-plugin-meilisearch).
 
 ## Related Repositories
 
-- [docs-searchBar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use vuepress.
+- [docs-searchbar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use Vuepress.
 - [docs-scraper](https://github.com/meilisearch/docs-scraper): the scraper used to scrap websites pages and automatically index the content in MeiliSearch.
 
 ## Compatibility with MeiliSearch
 
 This plugin works for MeiliSearch `>=0.10`.
+
+<hr>
+
+**MeiliSearch** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.
