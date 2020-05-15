@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/meilisearch/image/upload/v1587402338/SDKs/meilisearch_vuepress.svg" alt="MeiliSearch-Vuepress" width="200" height="200" />
+  <img src="https://res.cloudinary.com/meilisearch/image/upload/v1587402338/SDKs/meilisearch_vuepress.svg" alt="MeiliSearch-VuePress" width="200" height="200" />
 </p>
 
-<h1 align="center">MeiliSearch Vuepress</h1>
+<h1 align="center">MeiliSearch VuePress</h1>
 
 <h4 align="center">
   <a href="https://github.com/meilisearch/MeiliSearch">MeiliSearch</a> |
@@ -19,11 +19,11 @@
   <a href="https://slack.meilisearch.com"><img src="https://img.shields.io/badge/slack-MeiliSearch-blue.svg?logo=slack" alt="Slack"></a>
 </p>
 
-<p align="center">⚡ Lightning Fast, Ultra Relevant, and Typo-Tolerant Search Engine MeiliSearch plugin for Vuepress</p>
+<p align="center">⚡ Lightning Fast, Ultra Relevant, and Typo-Tolerant Search Engine MeiliSearch plugin for VuePress</p>
 
-**MeiliSearch Vuepress** is a **MeiliSearch** plugin for Vuepress. **MeiliSearch** is a powerful, fast, open-source, easy to use and deploy search engine. Both searching and indexing are highly customizable. Features such as typo-tolerance, filters, and synonyms are provided out-of-the-box.
+**MeiliSearch VuePress** is a **MeiliSearch** plugin for VuePress. **MeiliSearch** is a powerful, fast, open-source, easy to use and deploy search engine. Both searching and indexing are highly customizable. Features such as typo-tolerance, filters, and synonyms are provided out-of-the-box.
 
-If you don't use Vuepress for your documentation, but you still need a search bar, you might check out this [front-end SDK](https://github.com/meilisearch/docs-searchbar.js).
+If you don't use VuePress for your documentation, but you still need a search bar, you might check out this [front-end SDK](https://github.com/meilisearch/docs-searchbar.js).
 
 ![MeiliSearch docs demo](assets/docs-searchbar-demo.gif).
 
@@ -44,12 +44,12 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
 
 ### Before using the plugin
 
-The goal of this plugin is to provide very easy integration of a search bar into your own Vuepress documentation. To make that possible, you need to gather your website content in advance, and index it in a MeiliSearch instance.
+The goal of this plugin is to provide very easy integration of a search bar into your own VuePress documentation. To make that possible, you need to gather your website content in advance, and index it in a MeiliSearch instance.
 
 Luckily, we provide all the tools that you need, and can help you through the whole process, if you follow [this guide](https://docs.meilisearch.com/resources/howtos/search_bar_for_docs.html) 🚀
 
 As a first introduction, you might only want to test this plugin without connecting it to your website.<br>
-You can do it by running the Vuepress playground provided in this repository:
+You can do it by running the VuePress playground provided in this repository:
 
 ```bash
 $ yarn install
@@ -63,7 +63,7 @@ Type `create an indxe` to live the MeiliSearch experience with the [typo toleran
 
 ### Installation
 
-In your Vuepress project:
+In your VuePress project:
 
 ```bash
 $ yarn add vuepress-plugin-meilisearch
@@ -124,7 +124,7 @@ $ yarn install
 
 ### Test with the Playground <!-- omit in toc -->
 
-A playground of a Vuepress environment is provided to test the plugin.
+A playground of a VuePress environment is provided to test the plugin.
 
 ```bash
 $ yarn serve
@@ -168,7 +168,7 @@ A GitHub Actions will be triggered and push the package on [npm](https://www.npm
 
 ## Related Repositories
 
-- [docs-searchbar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use Vuepress.
+- [docs-searchbar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use VuePress.
 - [docs-scraper](https://github.com/meilisearch/docs-scraper): the scraper used to scrap websites pages and automatically index the content in MeiliSearch.
 
 ## Compatibility with MeiliSearch
