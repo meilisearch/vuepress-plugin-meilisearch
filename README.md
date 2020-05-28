@@ -36,9 +36,9 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
   - [Installation](#installation)
   - [Basic Configuration](#basic-configuration)
   - [Customization](#customization)
+- [Compatibility with MeiliSearch](#compatibility-with-meilisearch)
 - [Development Workflow](#development-workflow)
 - [Related Repositories](#related-repositories)
-- [Compatibility with MeiliSearch](#compatibility-with-meilisearch)
 
 ## Usage
 
@@ -114,6 +114,11 @@ module.exports = {
 }
 ```
 
+## Compatibility with MeiliSearch
+
+This package is compatible with the following MeiliSearch versions:
+- `v0.10.X`
+
 ## Development Workflow
 
 ### Install <!-- omit in toc -->
@@ -170,10 +175,6 @@ A GitHub Actions will be triggered and push the package on [npm](https://www.npm
 
 - [docs-searchbar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use VuePress.
 - [docs-scraper](https://github.com/meilisearch/docs-scraper): the scraper used to scrap websites pages and automatically index the content in MeiliSearch.
-
-## Compatibility with MeiliSearch
-
-This plugin works for MeiliSearch `>=0.10`.
 
 <hr>
 
