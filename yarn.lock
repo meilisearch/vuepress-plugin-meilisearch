@@ -1089,10 +1089,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autocomplete.js@0.36.0:
-  version "0.36.0"
-  resolved "https://registry.yarnpkg.com/autocomplete.js/-/autocomplete.js-0.36.0.tgz#94fe775fe64b6cd42e622d076dc7fd26bedd837b"
-  integrity sha512-jEwUXnVMeCHHutUt10i/8ZiRaCb0Wo+ZyKxeGsYwBDtw6EJHqEeDrq4UwZRD8YBSvp3g6klP678il2eeiVXN2Q==
+autocomplete.js@0.37.1:
+  version "0.37.1"
+  resolved "https://registry.yarnpkg.com/autocomplete.js/-/autocomplete.js-0.37.1.tgz#a29a048d827e7d2bf8f7df8b831766e5cc97df01"
+  integrity sha512-PgSe9fHYhZEsm/9jggbjtVsGXJkPLvd+9mC7gZJ662vVL5CRWEtm/mIrrzCx0MrNxHVwxD5d00UOn6NsmL2LUQ==
   dependencies:
     immediate "^3.2.3"
 
@@ -1897,16 +1897,17 @@ diff-sequences@^26.0.0:
   integrity sha512-JC/eHYEC3aSS0vZGjuoc4vHA0yAQTzhQQldXMeMF+JlxLGJlCO38Gma82NV9gk1jGFz8mDzUMeaKXvjRRdJ2dg==
 
 docs-searchbar.js@^1.1:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.5.tgz#9c16ad7e2968514deb06254948cdbd1400a29cce"
-  integrity sha512-P9br2cGsQ8PhyaZrD9vedE3U3Jymedp5FuIkp5HABLwOEDTYgL4/Nk1vdYgpBWpASMm0XAazNNxnsE4NufJ6rQ==
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.6.tgz#9177dcf9fb2f6a22e75f9706ef8fad46e389a5b1"
+  integrity sha512-1N1ZolqFA6R4AghOfyYRsJMuKlLMQOks0ryd8eJMoSICKdctqjPKMjUeMkpdCGMq97GKNRQbvvFSI8nR+aTZTA==
   dependencies:
-    autocomplete.js "0.36.0"
+    autocomplete.js "0.37.1"
     concurrently "^5.1.0"
+    eslint-plugin-eslint-comments "^3.2.0"
     hogan.js "^3.0.2"
-    meilisearch "^0.10.0"
+    meilisearch "^0.11.0"
     request "^2.87.0"
-    stack-utils "^1.0.1"
+    stack-utils "^2.0.2"
     to-factory "^1.0.0"
     zepto "^1.2.0"
 
@@ -2079,6 +2080,14 @@ eslint-plugin-es@^3.0.0:
   dependencies:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
+
+eslint-plugin-eslint-comments@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-3.2.0.tgz#9e1cd7b4413526abb313933071d7aba05ca12ffa"
+  integrity sha512-0jkOl0hfojIHHmEHgmNdqv4fmh7300NdpA9FFpF7zaoLvB/QeXOGNLIo86oAveJFrfB1p05kC8hpEMHM8DwWVQ==
+  dependencies:
+    escape-string-regexp "^1.0.5"
+    ignore "^5.0.5"
 
 eslint-plugin-import@^2.20.2:
   version "2.21.2"
@@ -2768,6 +2777,11 @@ ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
+
+ignore@^5.0.5:
+  version "5.1.8"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
+  integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
 ignore@^5.1.1:
   version "5.1.4"
@@ -4301,10 +4315,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-meilisearch@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.10.0.tgz#69ab66c1ebb63f5d927a2f7cd6a0a4570c666098"
-  integrity sha512-UsBlzr+MirLou7PJUQHX5sGGP4RepiJHjUkeNjllPCUsL3tkcNhN05G10/BdI2HEoEmrOvC6Oxd7HuAjY/3cEg==
+meilisearch@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.11.0.tgz#88b81c9211d32e076ce362cda14d5aa3af38193a"
+  integrity sha512-KMiufxLR9i3sWvD/cEm8PuKvYucd/SVKRfpe7jP7ZCxjXNIljGt2xEocIFpeqfXJZMszOfpmmb4E6nKPfmHOcQ==
   dependencies:
     axios "^0.19.2"
 
