@@ -37,7 +37,7 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
   - [Basic Configuration](#basic-configuration)
   - [Customization](#customization)
 - [Compatibility with MeiliSearch](#compatibility-with-meilisearch)
-- [Development Workflow](#development-workflow)
+- [Development Workflow and Contributing](#development-workflow-and-contributing)
 - [Related Repositories](#related-repositories)
 
 ## Usage
@@ -122,57 +122,11 @@ This package is compatible with the following MeiliSearch versions:
 - `v0.11.X`
 - `v0.10.X`
 
-## Development Workflow
+## Development Workflow and Contributing
 
-### Install <!-- omit in toc -->
+Any new contribution is more than welcome in this project!
 
-```bash
-$ yarn install
-```
-
-### Test with the Playground <!-- omit in toc -->
-
-A playground of a VuePress environment is provided to test the plugin.
-
-```bash
-$ yarn serve
-```
-
-Then, open your browser on the indicated URL and test the search bar 🙂
-
-Since the automatic tests are not relevant, we really recommend to use it during development.
-
-### Tests and Linter <!-- omit in toc -->
-
-```bash
-# Automatic tests (need improvement)
-$ yarn test
-# Linter
-$ yarn lint
-# Linter with auto-correct
-$ yarn lint:fix
-```
-
-### Release <!-- omit in toc -->
-
-MeiliSearch tools follow the [Semantic Versioning Convention](https://semver.org/).
-
-You must do a PR modifying the file `package.json` with the right version.<br>
-
-```javascript
-"version": X.X.X
-```
-
-Once the changes are merged on `master`, in your terminal, you must be on the `master` branch and push a new tag with the right version:
-
-```bash
-$ git checkout master
-$ git pull origin master
-$ git tag vX.X.X
-$ git push --tag origin master
-```
-
-A GitHub Actions will be triggered and push the package on [npm](https://www.npmjs.com/package/vuepress-plugin-meilisearch).
+If you want to know more about the development workflow or want to contribute, please visit our [contributing guidelines](/CONTRIBUTING.md) for detailed instructions!
 
 ## Related Repositories
 
