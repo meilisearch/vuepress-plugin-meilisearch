@@ -13,6 +13,7 @@
   "dependencies": {
     "docs-searchbar.js": "^1.1"
   },
+  "resolutions": { "yargs-parser": "^13.1.2" },
   "devDependencies": {
     "@vue/cli-plugin-unit-jest": "^4.3.1",
     "@vue/test-utils": "1.0.3",
