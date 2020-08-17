@@ -2082,15 +2082,15 @@ diff-sequences@^26.3.0:
   integrity sha512-5j5vdRcw3CNctePNYN0Wy2e/JbWT6cAYnXv5OuqPhDpyCGc0uLu2TK0zOCJWNB9kOIfYMSpIulRaDgIi4HJ6Ig==
 
 docs-searchbar.js@^1.1:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.6.tgz#9177dcf9fb2f6a22e75f9706ef8fad46e389a5b1"
-  integrity sha512-1N1ZolqFA6R4AghOfyYRsJMuKlLMQOks0ryd8eJMoSICKdctqjPKMjUeMkpdCGMq97GKNRQbvvFSI8nR+aTZTA==
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.7.tgz#bc2066d2d03242b05d1584e2220946539d7f2d86"
+  integrity sha512-DqNhqEmpWdmFGLl6SUffBsnuf05VpZHhM6LVyT4P6WkTEWg5K8lHfta2RDfbduvOm0xxGQxCfEVpd1m9JN32gw==
   dependencies:
     autocomplete.js "0.37.1"
     concurrently "^5.1.0"
     eslint-plugin-eslint-comments "^3.2.0"
     hogan.js "^3.0.2"
-    meilisearch "^0.11.0"
+    meilisearch "^0.12.0"
     request "^2.87.0"
     stack-utils "^2.0.2"
     to-factory "^1.0.0"
@@ -4530,10 +4530,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-meilisearch@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.11.0.tgz#88b81c9211d32e076ce362cda14d5aa3af38193a"
-  integrity sha512-KMiufxLR9i3sWvD/cEm8PuKvYucd/SVKRfpe7jP7ZCxjXNIljGt2xEocIFpeqfXJZMszOfpmmb4E6nKPfmHOcQ==
+meilisearch@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.12.0.tgz#051b728e2df07bdaf4321a98f6aa8dd7a89803e8"
+  integrity sha512-5bvw+zg8yh4ZXtXgz1VDAd0A/Ng1ZCagIiQyZKfyp7nyqOYafxIAU+wNigPcUdplyAunTXj2F6z/2GXeHge5VA==
   dependencies:
     axios "^0.19.2"
 
