@@ -2,7 +2,7 @@ module.exports = {
     title: "Welcome to the Playground!",
     plugins: [
         [
-          "meilisearch",
+          require('../../index.js'),
           {
             // Testing with MeiliSearch documentation content (https://docs.meilisearch.com/)
             "hostUrl": "https://docs-search-bar.meilisearch.com",
