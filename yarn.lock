@@ -1885,7 +1885,7 @@ diff-sequences@^26.6.2:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.6.2.tgz#48ba99157de1923412eed41db6b6d4aa9ca7c0b1"
   integrity sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q==
 
-docs-searchbar.js@^1.1:
+docs-searchbar.js@^1.1.10:
   version "1.1.10"
   resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.10.tgz#29326f6fc2437440ce466072d38eda4cc4b07947"
   integrity sha512-FZWdc11b+9spwL4vN70Wz3oUPnUJLPorS7v6dTcEamdV6IRn2EHHJ/UNrD/cfr5AO6hDrR87zMH6zPKNbmzwSg==
