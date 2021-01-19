@@ -1098,7 +1098,7 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autocomplete.js@0.38.0:
+autocomplete.js@^0.38.0:
   version "0.38.0"
   resolved "https://registry.yarnpkg.com/autocomplete.js/-/autocomplete.js-0.38.0.tgz#9d49c2f4788fa23960275a6422ca78b310c01ef8"
   integrity sha512-xZlqbg0LN9D1cZd4TkPJmir/Bq0+xXnp35X6i87yU2dD2wYv9E7pVU1+QKu0PbBVV2dShppwlKGMsfCYQD9OtA==
@@ -1885,12 +1885,12 @@ diff-sequences@^26.6.2:
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-26.6.2.tgz#48ba99157de1923412eed41db6b6d4aa9ca7c0b1"
   integrity sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q==
 
-docs-searchbar.js@^1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.10.tgz#29326f6fc2437440ce466072d38eda4cc4b07947"
-  integrity sha512-FZWdc11b+9spwL4vN70Wz3oUPnUJLPorS7v6dTcEamdV6IRn2EHHJ/UNrD/cfr5AO6hDrR87zMH6zPKNbmzwSg==
+docs-searchbar.js@^1.1.11:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-1.1.11.tgz#ca9fa783ece12d6aaae0711112a5b8b88e0653ff"
+  integrity sha512-5TU1W6N1SOuvxtvoieuyO2fZEXLSsBAu+C2HKQ88WdDpxkJ6tDOp/AGxoHJAwoIeogYG1HtsrPjyr5MXAT0huA==
   dependencies:
-    autocomplete.js "0.38.0"
+    autocomplete.js "^0.38.0"
     concurrently "^5.1.0"
     eslint-plugin-eslint-comments "^3.2.0"
     hogan.js "^3.0.2"
