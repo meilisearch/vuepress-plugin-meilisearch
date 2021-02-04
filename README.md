@@ -49,7 +49,7 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
 
 The goal of this plugin is to provide very easy integration of a search bar into your own VuePress documentation. To make that possible, you need to gather your website content in advance, and index it in a MeiliSearch instance.
 
-Luckily, we provide all the tools that you need, and can help you through the whole process, if you follow [this guide](https://docs.meilisearch.com/resources/howtos/search_bar_for_docs.html) 🚀
+Luckily, we provide all the tools that you need, and can help you through the whole process, if you follow [this guide](https://docs.meilisearch.com/create/how_to/search_bar_for_docs.html) 🚀
 
 As a first introduction, you might only want to test this plugin without connecting it to your website.<br>
 You can do it by running the VuePress playground provided in this repository:
@@ -62,7 +62,7 @@ $ yarn serve
 Then, open your browser on the indicated URL and test the search bar 🙂
 
 The data comes from MeiliSearch documentation.<br>
-Type `create an indxe` to live the MeiliSearch experience with the [typo tolerance](https://docs.meilisearch.com/guides/advanced_guides/typotolerance.html).
+Type `create an indxe` to live the MeiliSearch experience with the [typo tolerance](https://docs.meilisearch.com/reference/under_the_hood/typotolerance.html).
 
 ### Installation
 
@@ -94,7 +94,7 @@ module.exports = {
 ```
 
 **WARNING**: Since the configuration file is public, we recommend providing the MeiliSearch public key, which is enough to perform searches.<br>
-Read more about [MeiliSearch authentication](https://docs.meilisearch.com/guides/advanced_guides/authentication.html#authentication).
+Read more about [MeiliSearch authentication](https://docs.meilisearch.com/reference/features/authentication.html#authentication).
 
 ### Customization
 
