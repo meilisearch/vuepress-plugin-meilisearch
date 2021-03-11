@@ -55,8 +55,8 @@ As a first introduction, you might only want to test this plugin without connect
 You can do it by running the VuePress playground provided in this repository:
 
 ```bash
-$ yarn install
-$ yarn serve
+yarn install
+yarn serve
 ```
 
 Then, open your browser on the indicated URL and test the search bar 🙂
@@ -69,9 +69,9 @@ Type `create an indxe` to live the MeiliSearch experience with the [typo toleran
 In your VuePress project:
 
 ```bash
-$ yarn add vuepress-plugin-meilisearch
+yarn add vuepress-plugin-meilisearch
 # or
-$ npm install vuepress-plugin-meilisearch
+npm install vuepress-plugin-meilisearch
 ```
 
 ### Basic Configuration
