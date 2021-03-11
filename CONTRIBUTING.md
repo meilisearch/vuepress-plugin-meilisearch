@@ -29,7 +29,7 @@ First of all, thank you for contributing to MeiliSearch! The goal of this docume
 ### Setup <!-- omit in TOC -->
 
 ```bash
-$ yarn install
+yarn install
 ```
 
 ### Test with the Playground <!-- omit in TOC -->
@@ -37,7 +37,7 @@ $ yarn install
 A playground of a VuePress environment is provided to test the plugin.
 
 ```bash
-$ yarn serve
+yarn serve
 ```
 
 Then, open your browser on the indicated URL and test the search bar 🙂
@@ -48,11 +48,11 @@ Since the automatic tests are not relevant, we really recommend to use it during
 
 ```bash
 # Automatic tests (need improvement)
-$ yarn test
+yarn test
 # Linter
-$ yarn lint
+yarn lint
 # Linter with auto-correct
-$ yarn lint:fix
+yarn lint:fix
 ```
 
 ## Git Guidelines
