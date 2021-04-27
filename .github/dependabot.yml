@@ -1,0 +1,32 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "04:00"
+  open-pull-requests-limit: 10
+  labels:
+  - skip-changelog
+  - dependencies
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: eslint
+    versions:
+    - "> 7.12.0, < 7.13"
+  - dependency-name: eslint-plugin-standard
+    versions:
+    - "> 4.0.1, < 4.1"
+  - dependency-name: eslint-plugin-vue
+    versions:
+    - "> 7.4.0, < 7.5"
+  - dependency-name: "@vue/cli-plugin-unit-jest"
+    versions:
+    - "> 4.4.4, < 4.5"
+  - dependency-name: "@vue/cli-plugin-unit-jest"
+    versions:
+    - "> 4.5.9, < 4.6"
+  - dependency-name: "@vue/test-utils"
+    versions:
+    - "> 1.1.0, < 1.2"
+  rebase-strategy: disabled
