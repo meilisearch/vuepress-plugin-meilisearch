@@ -111,6 +111,7 @@ module.exports = {
         "maxSuggestions": 10,                   // Default: 5
         "hotKeys": [],                          // Default: ['s', '/']
         "cropLength": 50                        // Default: 30
+        "layout": "simple"                      // Default: "columns"
       }
     ],
   ],

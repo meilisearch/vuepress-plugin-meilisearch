@@ -12,7 +12,8 @@ module.exports = (options) => {
       PLACEHOLDER: options.placeholder || null,
       MAX_SUGGESTIONS: options.maxSuggestions || null,
       HOT_KEYS: options.hotKeys || ['s', '/'],
-      CROP_LENGTH: options.cropLength || 30
+      CROP_LENGTH: options.cropLength || 30,
+      LAYOUT: options.layout || 'columns'
     }
   }
 }
