@@ -38,7 +38,8 @@ export default {
       autocompleteOptions: {
         keyboardShortcuts: HOT_KEYS
       },
-      layout: LAYOUT
+      layout: LAYOUT,
+      enableDarkMode: ENABLE_DARK_MODE
     }
     this.initialize(options)
     this.placeholder =
@@ -78,36 +79,36 @@ export default {
 </script>
 
 <style lang="stylus">
-.search-box
-  display inline-block
-  position relative
-  margin-right 1rem
-  input
-    cursor text
-    width 10rem
-    height: 2rem
-    color lighten($textColor, 25%)
-    display inline-block
-    border 1px solid darken($borderColor, 10%)
-    border-radius 2rem
-    font-size 0.9rem
-    line-height 2rem
-    padding 0 0.5rem 0 2rem
-    outline none
-    transition all .2s ease
-    &:focus
-      cursor auto
-      border-color $accentColor
-    background #fff url(assets/search.svg) 0.6rem 0.5rem no-repeat
-    background-size 1rem
+@require '~/.vuepress/styles/palette.styl'
 
 .meilisearch-search-wrapper
   & > span
     vertical-align middle
   .dsb-cursor
-    background rgba($accentColor, 0.05)
+    background rgba(red, 0.05)
   .meilisearch-autocomplete
     line-height 2
+    // Searchbox
+    input
+      cursor text
+      width 10rem
+      height: 2rem
+      color lighten($textColor, 25%)
+      display inline-block
+      border 1px solid darken($borderColor, 10%)
+      border-radius 2rem
+      font-size 0.9rem
+      line-height 2rem
+      padding 0 0.5rem 0 2rem
+      outline none
+      transition all .2s ease
+      &:focus
+        cursor auto
+        border-color $accentColor
+      background #fff url(assets/search.svg) 0.6rem 0.5rem no-repeat
+      background-size 1rem
+
+    // Layout "columns"
     .docs-searchbar-suggestion:not(.suggestion-layout-simple)
       border-color $borderColor
       .docs-searchbar-suggestion--category-header
@@ -121,6 +122,7 @@ export default {
           box-shadow none
           background lighten($accentColor, 70%)
       .docs-searchbar-suggestion--wrapper
+        display flex
         padding 0
         .docs-searchbar-suggestion--highlight
           color darken($accentColor, 20%)
@@ -135,6 +137,8 @@ export default {
         .docs-searchbar-suggestion--highlight
           box-shadow inset 0 -2px 0 0 lighten($accentColor, 20%)
           color: inherit
+
+    // Layout simple
     .suggestion-layout-simple
       .docs-searchbar-suggestion--title
         color: $accentColor
@@ -150,6 +154,8 @@ export default {
           background-color: transparent
           box-shadow inset 0 -2px 0 0 lighten($accentColor, 20%)
           color inherit
+
+    // Footer
     .docs-searchbar-footer
       display flex !important
       justify-content space-between !important
@@ -157,8 +163,61 @@ export default {
       .docs-searchbar-footer-logo
         margin-bottom -4px
     .dsb-cursor .docs-searchbar-suggestion--content
-      background-color #e7edf3 !important
+      background-color #e7edf3
       color $textColor
+
+  // Dark theme
+  div[data-ds-theme="dark"]
+    .meilisearch-autocomplete
+      // Searchbox
+      input
+        color $textDarkColor
+        border 1px solid $borderDarkColor
+        background-color $inputDarkBgColor
+        &:focus
+          border-color $accentDarkColor
+
+      // Layout "columns"
+      .docs-searchbar-suggestion:not(.suggestion-layout-simple)
+        border-color $borderDarkColor
+        .docs-searchbar-suggestion--wrapper
+          .docs-searchbar-suggestion--highlight
+            color $accentDarkColor
+        .docs-searchbar-suggestion--category-header
+          background $accentDarkColor
+          .docs-searchbar-suggestion--highlight
+            background lighten($accentDarkColor, 20%)
+        .docs-searchbar-suggestion--title
+          color $textDarkColor
+        .docs-searchbar-suggestion--subcategory-column
+          border-color $borderDarkColor // Simple ?
+        .docs-searchbar-suggestion--subcategory-column-text
+          color $textDarkColor
+        .docs-searchbar-suggestion--text
+          .docs-searchbar-suggestion--highlight
+            box-shadow inset 0 -2px 0 0 lighten($accentDarkColor, 20%)
+
+      // Layout "simple"
+      .suggestion-layout-simple
+        .docs-searchbar-suggestion--category-header
+          .docs-searchbar-suggestion--category-header-lvl0, .docs-searchbar-suggestion--category-header-lvl1
+            .docs-searchbar-suggestion--highlight
+              box-shadow inset 0 -2px 0 0 darken($accentDarkColor, 10%)
+          .docs-searchbar-suggestion--title
+            .docs-searchbar-suggestion--highlight
+              color lighten($accentDarkColor, 20%)
+              background rgba($accentDarkColor, 10%)
+        .docs-searchbar-suggestion--category-header-lvl0, .docs-searchbar-suggestion--category-header-lvl1
+          .docs-searchbar-suggestion--highlight
+            color inherit
+
+      // Suggestion on hover
+      .dsb-dropdown-menu .dsb-suggestions .dsb-cursor
+        .docs-searchbar-suggestion.suggestion-layout-simple
+          background-color rgba($accentDarkColor, 30%)
+        .docs-searchbar-suggestion:not(.suggestion-layout-simple)
+          .docs-searchbar-suggestion--content
+            background-color rgba($accentDarkColor, 30%)
 
 @media (min-width: $MQMobile)
   .meilisearch-search-wrapper

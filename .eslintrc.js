@@ -14,7 +14,8 @@ module.exports = {
     CROP_LENGTH: 'readonly',
     HOT_KEYS: 'readonly',
     PLACEHOLDER: 'readonly',
-    LAYOUT: 'readonly'
+    LAYOUT: 'readonly',
+    ENABLE_DARK_MODE: 'readonly'
   },
   parserOptions: {
     parser: 'babel-eslint',

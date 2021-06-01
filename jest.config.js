@@ -14,6 +14,7 @@ module.exports = {
     MAX_SUGGESTIONS: null,
     HOT_KEYS: ['s', '/'],
     CROP_LENGTH: 30,
-    LAYOUT: 'columns'
+    LAYOUT: 'columns',
+    ENABLE_DARK_MODE: false
   }
 }
