@@ -36,7 +36,8 @@ export default {
       },
       autocompleteOptions: {
         keyboardShortcuts: HOT_KEYS
-      }
+      },
+      layout: LAYOUT
     }
     this.initialize(options)
     this.placeholder = PLACEHOLDER || this.$site.themeConfig.searchPlaceholder || ''
@@ -101,11 +102,11 @@ export default {
 .meilisearch-search-wrapper
   & > span
     vertical-align middle
+  .dsb-cursor
+    background rgba($accentColor, 0.05)
   .meilisearch-autocomplete
     line-height 2
-    .docs-searchbar-suggestion--highlight
-      color darken($accentColor, 20%)
-    .docs-searchbar-suggestion
+    .docs-searchbar-suggestion:not(.suggestion-layout-simple)
       border-color $borderColor
       .docs-searchbar-suggestion--category-header
         background #f1f3f5
@@ -115,10 +116,12 @@ export default {
         font-weight 600
         color #fff
         .docs-searchbar-suggestion--highlight
-          background rgba(255, 255, 255, 0.6)
           box-shadow none
+          background lighten($accentColor, 70%)
       .docs-searchbar-suggestion--wrapper
         padding 0
+        .docs-searchbar-suggestion--highlight
+          color darken($accentColor, 20%)
       .docs-searchbar-suggestion--title
         margin-bottom 0
         color $textColor
@@ -129,6 +132,22 @@ export default {
       .docs-searchbar-suggestion--text
         .docs-searchbar-suggestion--highlight
           box-shadow inset 0 -2px 0 0 lighten($accentColor, 20%)
+          color: inherit
+    .suggestion-layout-simple
+      .docs-searchbar-suggestion--title
+        color: $accentColor
+        &:before
+          color: darken($accentColor, 20%)
+      .docs-searchbar-suggestion--category-header
+        .docs-searchbar-suggestion--highlight
+          box-shadow unset
+          color: darken($accentColor, 20%)
+          background-color rgba($accentColor, 0.05)
+      .docs-searchbar-suggestion--category-header-lvl0, .docs-searchbar-suggestion--category-header-lvl1
+        .docs-searchbar-suggestion--highlight
+          background-color: transparent
+          box-shadow inset 0 -2px 0 0 lighten($accentColor, 20%)
+          color inherit
     .docs-searchbar-footer
       display flex !important
       justify-content space-between !important

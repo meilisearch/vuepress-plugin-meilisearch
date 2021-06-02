@@ -17,7 +17,8 @@ module.exports = {
     MAX_SUGGESTIONS: 'readonly',
     CROP_LENGTH: 'readonly',
     HOT_KEYS: 'readonly',
-    PLACEHOLDER: 'readonly'
+    PLACEHOLDER: 'readonly',
+    LAYOUT: 'readonly'
   },
   parserOptions: {
     parser: 'babel-eslint',

@@ -10,6 +10,7 @@ module.exports = {
     PLACEHOLDER: null,
     MAX_SUGGESTIONS: null,
     HOT_KEYS: ['s', '/'],
-    CROP_LENGTH: 30
+    CROP_LENGTH: 30,
+    LAYOUT: 'columns'
   }
 }
