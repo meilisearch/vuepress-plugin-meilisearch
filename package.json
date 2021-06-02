@@ -4,10 +4,10 @@
   "description": "Relevant and typo tolerant search bar for your Vuepress",
   "author": "Clémentine Urquizar <clementine@meilisearch.com>",
   "scripts": {
+    "serve": "yarn --cwd ./playground install && yarn --cwd ./playground dev",
     "lint": "eslint '{.,tests}/**/*.{vue,js}'",
     "lint:fix": "yarn lint --fix",
-    "serve": "yarn --cwd ./playground install && yarn --cwd ./playground dev",
-    "test": "jest"
+    "test": "vue-cli-service test:unit"
   },
   "main": "index.js",
   "dependencies": {
@@ -18,16 +18,17 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-unit-jest": "^4.5.13",
-    "@vue/test-utils": "1.2.0",
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/test-utils": "^1.2.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.25.0",
-    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.9.0",
-    "jest": "^26.0.1",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },

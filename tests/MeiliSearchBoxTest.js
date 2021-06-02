@@ -2,14 +2,18 @@ import { shallowMount } from '@vue/test-utils'
 import MeiliSearchBox from '../MeiliSearchBox.vue'
 
 describe('MeiliSearchBox', () => {
-  const wrapper = shallowMount(
-    MeiliSearchBox,
-    {
-      mocks: {
-        $site: { themeConfig: {} }
+  let wrapper = null
+
+  beforeEach(() => {
+    wrapper = shallowMount(
+      MeiliSearchBox,
+      {
+        mocks: {
+          $site: { themeConfig: {} }
+        }
       }
-    }
-  )
+    )
+  })
 
   it('renders default form and input', () => {
     expect(wrapper.html()).toContain('<form id="search-form" role="search" class="meilisearch-search-wrapper search-box">')
