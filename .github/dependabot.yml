@@ -14,3 +14,4 @@ updates:
   ignore:
       - dependency-name: "eslint*"
       - dependency-name: "babel-eslint"
+      - dependency-name: "@vue/*"
