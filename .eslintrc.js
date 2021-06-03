@@ -24,6 +24,6 @@ module.exports = {
   rules: {
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'vue/html-self-closing': 0,
-    'space-before-function-paren': 'never'
+    'space-before-function-paren': 'off'
   }
 }
