@@ -5,11 +5,7 @@ module.exports = {
     es6: true,
     jest: true
   },
-  extends: [
-    'plugin:vue/essential',
-    'standard',
-    'plugin:vue/recommended'
-  ],
+  extends: ['plugin:vue/essential', 'standard', 'plugin:vue/recommended'],
   globals: {
     HOST_URL: 'readonly',
     API_KEY: 'readonly',
@@ -24,10 +20,10 @@ module.exports = {
     parser: 'babel-eslint',
     ecmaVersion: 2018
   },
-  plugins: [
-    'vue'
-  ],
+  plugins: ['vue'],
   rules: {
-    'no-console': ['error', { allow: ['warn', 'error'] }]
+    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'vue/html-self-closing': 0,
+    'space-before-function-paren': 'never'
   }
 }

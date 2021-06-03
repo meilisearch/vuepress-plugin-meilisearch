@@ -8,30 +8,31 @@
       id="meilisearch-search-input"
       class="search-query"
       :placeholder="placeholder"
-    >
+    />
   </form>
 </template>
 
 <script>
 export default {
   name: 'MeiliSearchBox',
-  data () {
+  data() {
     return {
       placeholder: undefined
     }
   },
   watch: {
-    options (newValue) {
+    options(newValue) {
       this.update(newValue)
     }
   },
-  mounted () {
+  mounted() {
     const options = {
       hostUrl: HOST_URL,
       apiKey: API_KEY,
       indexUid: INDEX_UID,
       meilisearchOptions: {
-        limit: MAX_SUGGESTIONS || this.$site.themeConfig.searchMaxSuggestions || 5,
+        limit:
+          MAX_SUGGESTIONS || this.$site.themeConfig.searchMaxSuggestions || 5,
         cropLength: CROP_LENGTH
       },
       autocompleteOptions: {
@@ -40,11 +41,12 @@ export default {
       layout: LAYOUT
     }
     this.initialize(options)
-    this.placeholder = PLACEHOLDER || this.$site.themeConfig.searchPlaceholder || ''
+    this.placeholder =
+      PLACEHOLDER || this.$site.themeConfig.searchPlaceholder || ''
   },
 
   methods: {
-    initialize (userOptions) {
+    initialize(userOptions) {
       Promise.all([
         import(
           /* webpackChunkName: "docs-searchbar" */ 'docs-searchbar.js/dist/cdn/docs-searchbar.min.js'
@@ -66,7 +68,7 @@ export default {
       })
     },
 
-    update (options) {
+    update(options) {
       this.$el.innerHTML =
         '<input id="meilisearch-search-input" class="search-query">'
       this.initialize(options)
