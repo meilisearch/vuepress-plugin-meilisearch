@@ -82,14 +82,14 @@ In your `config.js` file:
 module.exports = {
   plugins: [
     [
-      "vuepress-plugin-meilisearch",
+      'vuepress-plugin-meilisearch',
       {
-        "hostUrl": "https://mymeilisearch.com",
-        "apiKey": "XXX",
-        "indexUid": "docs"
+        hostUrl: 'https://mymeilisearch.com',
+        apiKey: 'XXX',
+        indexUid: 'docs'
       }
-    ],
-  ],
+    ]
+  ]
 }
 ```
 
@@ -102,19 +102,19 @@ Read more about [MeiliSearch authentication](https://docs.meilisearch.com/refere
 module.exports = {
   plugins: [
     [
-      "vuepress-plugin-meilisearch",
+      'vuepress-plugin-meilisearch',
       {
-        "hostUrl": "https://mymeilisearch.com", // Mandatory
-        "apiKey": "XXX",                        // Mandatory
-        "indexUid": "docs-test",                // Mandatory
-        "placeholder": "Search as you type...", // Default: ""
-        "maxSuggestions": 10,                   // Default: 5
-        "hotKeys": [],                          // Default: ['s', '/']
-        "cropLength": 50,                       // Default: 30
-        "layout": "simple"                      // Default: "columns"
+        hostUrl: 'https://mymeilisearch.com', // Mandatory
+        apiKey: 'XXX', // Mandatory
+        indexUid: 'docs-test', // Mandatory
+        placeholder: 'Search as you type...', // Default: ""
+        maxSuggestions: 10, // Default: 5
+        hotKeys: [], // Default: ['s', '/']
+        cropLength: 50, // Default: 30
+        layout: 'simple' // Default: "columns"
       }
-    ],
-  ],
+    ]
+  ]
 }
 ```
 

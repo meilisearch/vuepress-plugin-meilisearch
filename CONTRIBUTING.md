@@ -22,7 +22,7 @@ First of all, thank you for contributing to MeiliSearch! The goal of this docume
 4. Review the [Development Workflow](#workflow) section that describes the steps to maintain the repository.
 5. Make the changes on your branch.
 6. [Submit the branch as a PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) pointing to the `main` branch of the main vuepress-plugin-meilisearch repository. A maintainer should comment and/or review your Pull Request within a few days. Although depending on the circumstances, it may take longer.<br>
- We do not enforce a naming convention for the PRs, but **please use something descriptive of your changes**, having in mind that the title of your PR will be automatically added to the next [release changelog](https://github.com/meilisearch/vuepress-plugin-meilisearch/releases/).
+   We do not enforce a naming convention for the PRs, but **please use something descriptive of your changes**, having in mind that the title of your PR will be automatically added to the next [release changelog](https://github.com/meilisearch/vuepress-plugin-meilisearch/releases/).
 
 ## Development Workflow
 
@@ -65,6 +65,7 @@ We do not enforce any branch naming style, but please use something descriptive 
 ### Git Commits <!-- omit in TOC -->
 
 As minimal requirements, your commit message should:
+
 - be capitalized
 - not finish by a dot or any other punctuation character (!,?)
 - start with a verb so that we can read your commit message this way: "This commit will ...", where "..." is the commit message.

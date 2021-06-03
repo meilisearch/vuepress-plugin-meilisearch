@@ -3,7 +3,8 @@ module.exports = {
   testMatch: ['<rootDir>/tests/**/*.js?(x)'],
   preset: '@vue/cli-plugin-unit-jest',
   moduleNameMapper: {
-    'docs-searchbar.js': '<rootDir>/node_modules/docs-searchbar.js/dist/cdn/docs-searchbar.js'
+    'docs-searchbar.js':
+      '<rootDir>/node_modules/docs-searchbar.js/dist/cdn/docs-searchbar.js'
   },
   globals: {
     HOST_URL: 'https://e10b17e6.getmeili.com',
