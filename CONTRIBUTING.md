@@ -26,6 +26,13 @@ First of all, thank you for contributing to MeiliSearch! The goal of this docume
 
 ## Development Workflow
 
+### Requirements <!-- omit in TOC -->
+
+To run this project, you will need:
+
+- Node.js >= v12 and node < 15
+- Yarn
+
 ### Setup <!-- omit in TOC -->
 
 ```bash

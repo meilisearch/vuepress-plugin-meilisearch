@@ -13,9 +13,6 @@
   "dependencies": {
     "docs-searchbar.js": "^1.1.11"
   },
-  "engines": {
-    "node": ">=12 <15"
-  },
   "resolutions": {
     "yargs-parser": "^13.1.2"
   },
