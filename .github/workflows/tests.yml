@@ -11,14 +11,21 @@ on:
 
 jobs:
   tests:
-    name: tests
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '12', '14' ]
+    name: Tests (Node.js ${{ matrix.node }})
     steps:
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: yarn install
-    - name: Run tests
-      run: yarn run test
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install dependencies
+        run: yarn install
+      - name: Run tests
+        run: yarn run test
 
   linter:
     name: linter-check
