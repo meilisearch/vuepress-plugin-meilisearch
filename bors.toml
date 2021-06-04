@@ -1,5 +1,4 @@
 status = [
-    'tests',
     'linter-check',
     'Tests (Node.js 12)',
     'Tests (Node.js 14)'
