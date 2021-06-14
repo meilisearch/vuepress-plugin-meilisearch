@@ -11,7 +11,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "docs-searchbar.js": "^1.1.11"
+    "docs-searchbar.js": "^1.2.0"
   },
   "resolutions": {
     "yargs-parser": "^13.1.2"
