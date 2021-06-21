@@ -85,7 +85,7 @@ export default {
   & > span
     vertical-align middle
   .dsb-cursor
-    background rgba(red, 0.05)
+    background rgba($accentColor, 0.05)
   .meilisearch-autocomplete
     line-height 2
     // Searchbox
