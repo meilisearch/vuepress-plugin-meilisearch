@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '~/.vuepress/styles/palette.styl'
+@require './styles/palette.styl'
 
 .meilisearch-search-wrapper
   & > span
