@@ -1,6 +1,9 @@
 module.exports = {
   title: 'Welcome to the Playground!',
-  'color-scheme': 'dark light',
+  theme: 'default-prefers-color-scheme',
+  themeConfig: {
+    prefersTheme: 'dark'
+  },
   plugins: [
     [
       require('../../index.js'),
