@@ -125,7 +125,7 @@ module.exports = {
 You can enable dark mode by adding `enableDarkMode: true` to your configuration file.
 
 To override the default theme of the search bar, you can edit your `.vuepress/styles/palette.styl` file.<br>
-A few variables are available :
+A few variables are available:
 
 ```js
 $msAccentDarkColor
