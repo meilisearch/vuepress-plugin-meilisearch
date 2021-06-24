@@ -112,6 +112,7 @@ module.exports = {
         hotKeys: [], // Default: ['s', '/']
         cropLength: 50, // Default: 30
         layout: 'simple', // Default: "columns"
+        debug: true, // Default: false
         enableDarkMode: true // Default: false
       }
     ]

@@ -39,6 +39,7 @@ export default {
         keyboardShortcuts: HOT_KEYS
       },
       layout: LAYOUT,
+      debug: DEBUG,
       enableDarkMode: ENABLE_DARK_MODE
     }
     this.initialize(options)

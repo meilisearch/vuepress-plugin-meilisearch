@@ -15,6 +15,7 @@ module.exports = {
     HOT_KEYS: ['s', '/'],
     CROP_LENGTH: 30,
     LAYOUT: 'columns',
+    DEBUG: false,
     ENABLE_DARK_MODE: false
   }
 }

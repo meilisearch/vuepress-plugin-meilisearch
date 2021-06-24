@@ -15,6 +15,7 @@ module.exports = {
     HOT_KEYS: 'readonly',
     PLACEHOLDER: 'readonly',
     LAYOUT: 'readonly',
+    DEBUG: 'readonly',
     ENABLE_DARK_MODE: 'readonly'
   },
   parserOptions: {

@@ -13,6 +13,7 @@ module.exports = {
         apiKey:
           'd79226ae89f29d4dadba8d0c30c240e435f584fb83a7ae573b13eb62edec35cd',
         indexUid: 'docs',
+        debug: true,
         enableDarkMode: true
         // "maxSuggestions": 10,
         // placeholder: 'Search as you type...'
