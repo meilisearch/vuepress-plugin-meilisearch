@@ -170,7 +170,7 @@ export default {
   div[data-ds-theme="dark"]
     .meilisearch-autocomplete
       .dsb-dropdown-menu [class^=dsb-dataset-], .docs-searchbar-suggestion
-        background lighten($bgDarkColor, 10%)
+        background $msDropdownBgDarkColor
 
       // Searchbox
       input

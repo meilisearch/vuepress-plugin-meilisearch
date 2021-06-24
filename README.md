@@ -131,6 +131,7 @@ $msAccentDarkColor
 $msInputDarkBgColor
 $msTextDarkColor
 $borderDarkColor
+$msDropdownBgDarkColor
 ```
 
 You can also find an example in our [playground's `palette.styl` file](./playground/.vuepress/styles/palette.styl)
