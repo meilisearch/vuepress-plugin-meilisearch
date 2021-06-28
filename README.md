@@ -128,11 +128,11 @@ To override the default theme of the search bar, you can edit your `.vuepress/st
 A few variables are available:
 
 ```js
-$msAccentDarkColor
-$msInputDarkBgColor
-$msTextDarkColor
+$accentDarkColor
+$inputDarkBgColor
+$textDarkColor
 $borderDarkColor
-$msDropdownBgDarkColor
+$dropdownBgDarkColor
 ```
 
 You can also find an example in our [playground's `palette.styl` file](./playground/.vuepress/styles/palette.styl)

@@ -171,46 +171,46 @@ export default {
   div[data-ds-theme="dark"]
     .meilisearch-autocomplete
       .dsb-dropdown-menu [class^=dsb-dataset-], .docs-searchbar-suggestion
-        background $msDropdownBgDarkColor
+        background $dropdownBgDarkColor
 
       // Searchbox
       input
-        color $msTextDarkColor
-        border 1px solid $msBorderDarkColor
-        background-color $msInputDarkBgColor
+        color $textDarkColor
+        border 1px solid $borderDarkColor
+        background-color $inputDarkBgColor
         &:focus
-          border-color $msAccentDarkColor
+          border-color $accentDarkColor
 
       // Layout "columns"
       .docs-searchbar-suggestion:not(.suggestion-layout-simple)
-        border-color $msBorderDarkColor
+        border-color $borderDarkColor
         .docs-searchbar-suggestion--wrapper
           .docs-searchbar-suggestion--highlight
-            color $msAccentDarkColor
+            color $accentDarkColor
         .docs-searchbar-suggestion--category-header
-          background $msAccentDarkColor
+          background $accentDarkColor
           .docs-searchbar-suggestion--highlight
-            background lighten($msAccentDarkColor, 20%)
+            background lighten($accentDarkColor, 20%)
         .docs-searchbar-suggestion--title
-          color $msTextDarkColor
+          color $textDarkColor
         .docs-searchbar-suggestion--subcategory-column
-          border-color $msBorderDarkColor // Simple ?
+          border-color $borderDarkColor // Simple ?
         .docs-searchbar-suggestion--subcategory-column-text
-          color $msTextDarkColor
+          color $textDarkColor
         .docs-searchbar-suggestion--text
           .docs-searchbar-suggestion--highlight
-            box-shadow inset 0 -2px 0 0 lighten($msAccentDarkColor, 20%)
+            box-shadow inset 0 -2px 0 0 lighten($accentDarkColor, 20%)
 
       // Layout "simple"
       .suggestion-layout-simple
         .docs-searchbar-suggestion--category-header
           .docs-searchbar-suggestion--category-header-lvl0, .docs-searchbar-suggestion--category-header-lvl1
             .docs-searchbar-suggestion--highlight
-              box-shadow inset 0 -2px 0 0 darken($msAccentDarkColor, 10%)
+              box-shadow inset 0 -2px 0 0 darken($accentDarkColor, 10%)
           .docs-searchbar-suggestion--title
             .docs-searchbar-suggestion--highlight
-              color lighten($msAccentDarkColor, 20%)
-              background rgba($msAccentDarkColor, 10%)
+              color lighten($accentDarkColor, 20%)
+              background rgba($accentDarkColor, 10%)
         .docs-searchbar-suggestion--category-header-lvl0, .docs-searchbar-suggestion--category-header-lvl1
           .docs-searchbar-suggestion--highlight
             color inherit
@@ -218,10 +218,10 @@ export default {
       // Suggestion on hover
       .dsb-dropdown-menu .dsb-suggestions .dsb-cursor
         .docs-searchbar-suggestion.suggestion-layout-simple
-          background-color rgba($msAccentDarkColor, 30%)
+          background-color rgba($accentDarkColor, 30%)
         .docs-searchbar-suggestion:not(.suggestion-layout-simple)
           .docs-searchbar-suggestion--content
-            background-color rgba($msAccentDarkColor, 30%)
+            background-color rgba($accentDarkColor, 30%)
 
 @media (min-width: $MQMobile)
   .meilisearch-search-wrapper
