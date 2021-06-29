@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-meilisearch",
-  "version": "0.10.9",
+  "version": "0.11.0",
   "description": "Relevant and typo tolerant search bar for your Vuepress",
   "author": "Clémentine Urquizar <clementine@meilisearch.com>",
   "scripts": {
