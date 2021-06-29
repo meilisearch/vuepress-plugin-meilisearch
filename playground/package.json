@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "vuepress": "^1.4.1",
-    "vuepress-plugin-meilisearch": "^0.0.6"
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
   }
 }

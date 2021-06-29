@@ -13,7 +13,9 @@ module.exports = (options) => {
       MAX_SUGGESTIONS: options.maxSuggestions || null,
       HOT_KEYS: options.hotKeys || ['s', '/'],
       CROP_LENGTH: options.cropLength || 30,
-      LAYOUT: options.layout || 'columns'
+      LAYOUT: options.layout || 'columns',
+      DEBUG: options.debug || false,
+      ENABLE_DARK_MODE: options.enableDarkMode || false
     }
   }
 }

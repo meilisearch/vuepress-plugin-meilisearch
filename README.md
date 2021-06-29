@@ -111,12 +111,31 @@ module.exports = {
         maxSuggestions: 10, // Default: 5
         hotKeys: [], // Default: ['s', '/']
         cropLength: 50, // Default: 30
-        layout: 'simple' // Default: "columns"
+        layout: 'simple', // Default: "columns"
+        debug: true, // Default: false
+        enableDarkMode: true // Default: false
       }
     ]
   ]
 }
 ```
+
+#### Dark mode
+
+You can enable dark mode by adding `enableDarkMode: true` to your configuration file.
+
+To override the default theme of the search bar, you can edit your `.vuepress/styles/palette.styl` file.<br>
+A few variables are available:
+
+```js
+$accentDarkColor
+$inputDarkBgColor
+$textDarkColor
+$borderDarkColor
+$dropdownBgDarkColor
+```
+
+You can also find an example in our [playground's `palette.styl` file](./playground/.vuepress/styles/palette.styl)
 
 ## Compatibility with MeiliSearch
 
