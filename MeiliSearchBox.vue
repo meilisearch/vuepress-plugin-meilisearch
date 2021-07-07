@@ -83,13 +83,14 @@ export default {
 @require './styles/palette.styl'
 
 .meilisearch-search-wrapper
-  & > span
+  display: inline-block;
+  position: relative;
+  margin-right 1rem
+  & > div > span
     vertical-align middle
   .dsb-cursor
     background rgba($accentColor, 0.05)
   .meilisearch-autocomplete
-    line-height 2
-    margin-right 1rem
     // Searchbox
     input
       cursor text
