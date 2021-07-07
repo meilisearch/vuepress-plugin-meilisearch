@@ -2,7 +2,12 @@ module.exports = {
   title: 'Welcome to the Playground!',
   theme: 'default-prefers-color-scheme',
   themeConfig: {
-    prefersTheme: 'dark'
+    prefersTheme: 'dark',
+    nav: [
+      { text: 'Learn', link: '/learn/' },
+      { text: 'Create', link: '/create/how_to/' },
+      { text: 'Reference', link: '/reference/' }
+    ]
   },
   plugins: [
     [
