@@ -260,4 +260,7 @@ export default {
       width 5px
       margin -3px 3px 0
       vertical-align middle
+    div[data-ds-theme="dark"]
+      .docs-searchbar-suggestion--subcategory-column
+        background transparent !important
 </style>
