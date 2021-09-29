@@ -139,7 +139,7 @@ You can also find an example in our [playground's `palette.styl` file](./playgro
 
 ## Compatibility with MeiliSearch
 
-This package only guarantees the compatibility with the [version v0.22.0 of MeiliSearch](https://github.com/meilisearch/MeiliSearch/releases/tag/v0.22.0).
+This package only guarantees the compatibility with the [version v0.23.0 of MeiliSearch](https://github.com/meilisearch/MeiliSearch/releases/tag/v0.23.0).
 
 ## Development Workflow and Contributing
 
