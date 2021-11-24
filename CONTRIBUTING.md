@@ -44,7 +44,7 @@ yarn install
 A playground of a VuePress environment is provided to test the plugin.
 
 ```bash
-yarn serve
+yarn playground
 ```
 
 Then, open your browser on the indicated URL and test the search bar 🙂
