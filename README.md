@@ -56,7 +56,7 @@ You can do it by running the VuePress playground provided in this repository:
 
 ```bash
 yarn install
-yarn serve
+yarn playground
 ```
 
 Then, open your browser on the indicated URL and test the search bar 🙂
