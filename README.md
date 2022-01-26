@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/meilisearch/image/upload/v1587402338/SDKs/meilisearch_vuepress.svg" alt="MeiliSearch-VuePress" width="200" height="200" />
+  <img src="https://res.cloudinary.com/meilisearch/image/upload/v1587402338/SDKs/meilisearch_vuepress.svg" alt="meilisearch-VuePress" width="200" height="200" />
 </p>
 
-<h1 align="center">MeiliSearch VuePress</h1>
+<h1 align="center">meilisearch VuePress</h1>
 
 <h4 align="center">
-  <a href="https://github.com/meilisearch/MeiliSearch">MeiliSearch</a> |
+  <a href="https://github.com/meilisearch/meilisearch">meilisearch</a> |
   <a href="https://docs.meilisearch.com">Documentation</a> |
   <a href="https://slack.meilisearch.com">Slack</a> |
   <a href="https://roadmap.meilisearch.com/tabs/1-under-consideration">Roadmap</a> |
@@ -20,17 +20,17 @@
   <a href="https://app.bors.tech/repositories/28907"><img src="https://bors.tech/images/badge_small.svg" alt="Bors enabled"></a>
 </p>
 
-<p align="center">⚡ The MeiliSearch plugin for VuePress</p>
+<p align="center">⚡ The meilisearch plugin for VuePress</p>
 
-**MeiliSearch VuePress** is a **MeiliSearch** plugin for VuePress.
+**meilisearch VuePress** is a **meilisearch** plugin for VuePress.
 
-**MeiliSearch** is an open-source search engine. [Discover what MeiliSearch is!](https://github.com/meilisearch/MeiliSearch)
+**meilisearch** is an open-source search engine. [Discover what meilisearch is!](https://github.com/meilisearch/meilisearch)
 
 If you don't use VuePress for your documentation, but you still need a search bar, you might check out this [front-end SDK](https://github.com/meilisearch/docs-searchbar.js).
 
-![MeiliSearch docs demo](assets/docs-searchbar-demo.gif).
+![meilisearch docs demo](assets/docs-searchbar-demo.gif).
 
-This plugin is used in production on the [MeiliSearch documentation](https://docs.meilisearch.com/).
+This plugin is used in production on the [meilisearch documentation](https://docs.meilisearch.com/).
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -39,7 +39,7 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
   - [Installation](#installation)
   - [Basic Configuration](#basic-configuration)
   - [Customization](#customization)
-- [Compatibility with MeiliSearch](#compatibility-with-meilisearch)
+- [Compatibility with meilisearch](#compatibility-with-meilisearch)
 - [Development Workflow and Contributing](#development-workflow-and-contributing)
 - [Related Repositories](#related-repositories)
 
@@ -47,7 +47,7 @@ This plugin is used in production on the [MeiliSearch documentation](https://doc
 
 ### Before using the plugin
 
-The goal of this plugin is to provide very easy integration of a search bar into your own VuePress documentation. To make that possible, you need to gather your website content in advance, and index it in a MeiliSearch instance.
+The goal of this plugin is to provide very easy integration of a search bar into your own VuePress documentation. To make that possible, you need to gather your website content in advance, and index it in a meilisearch instance.
 
 Luckily, we provide all the tools that you need, and can help you through the whole process, if you follow [this guide](https://docs.meilisearch.com/create/how_to/search_bar_for_docs.html) 🚀
 
@@ -61,8 +61,8 @@ yarn playground
 
 Then, open your browser on the indicated URL and test the search bar 🙂
 
-The data comes from MeiliSearch documentation.<br>
-Type `create an indxe` to live the MeiliSearch experience with the [typo tolerance](https://docs.meilisearch.com/reference/under_the_hood/typotolerance.html).
+The data comes from meilisearch documentation.<br>
+Type `create an indxe` to live the meilisearch experience with the [typo tolerance](https://docs.meilisearch.com/reference/under_the_hood/typotolerance.html).
 
 ### Installation
 
@@ -93,8 +93,8 @@ module.exports = {
 }
 ```
 
-**WARNING**: Since the configuration file is public, we recommend providing the MeiliSearch public key, which is enough to perform searches.<br>
-Read more about [MeiliSearch authentication](https://docs.meilisearch.com/reference/features/authentication.html#authentication).
+**WARNING**: Since the configuration file is public, we recommend providing the meilisearch public key, which is enough to perform searches.<br>
+Read more about [meilisearch authentication](https://docs.meilisearch.com/reference/features/authentication.html#authentication).
 
 ### Customization
 
@@ -137,9 +137,9 @@ $dropdownBgDarkColor
 
 You can also find an example in our [playground's `palette.styl` file](./playground/.vuepress/styles/palette.styl)
 
-## Compatibility with MeiliSearch
+## Compatibility with meilisearch
 
-This package only guarantees the compatibility with the [version v0.24.0 of MeiliSearch](https://github.com/meilisearch/MeiliSearch/releases/tag/v0.24.0).
+This package only guarantees the compatibility with the [version v0.24.0 of meilisearch](https://github.com/meilisearch/meilisearch/releases/tag/v0.24.0).
 
 ## Development Workflow and Contributing
 
@@ -150,8 +150,8 @@ If you want to know more about the development workflow or want to contribute, p
 ## Related Repositories
 
 - [docs-searchbar.js](https://github.com/meilisearch/docs-searchbar.js): the library used to display the dropdown of this plugin. It can be useful if you want a search bar for your documentation but you don't use VuePress.
-- [docs-scraper](https://github.com/meilisearch/docs-scraper): the scraper used to scrap websites pages and automatically index the content in MeiliSearch.
+- [docs-scraper](https://github.com/meilisearch/docs-scraper): the scraper used to scrap websites pages and automatically index the content in meilisearch.
 
 <hr>
 
-**MeiliSearch** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.
+**meilisearch** provides and maintains many **SDKs and Integration tools** like this one. We want to provide everyone with an **amazing search experience for any kind of project**. If you want to contribute, make suggestions, or just know what's going on right now, visit us in the [integration-guides](https://github.com/meilisearch/integration-guides) repository.
