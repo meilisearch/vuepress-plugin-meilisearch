@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://res.cloudinary.com/meilisearch/image/upload/v1587402338/SDKs/meilisearch_vuepress.svg" alt="Meilisearch-VuePress" width="200" height="200" />
+  <img src="https://raw.githubusercontent.com/meilisearch/integration-guides/main/assets/logos/meilisearch_vuepress.svg" alt="Meilisearch-VuePress" width="200" height="200" />
 </p>
 
 <h1 align="center">Meilisearch VuePress</h1>
