@@ -17,7 +17,7 @@
   <a href="https://www.npmjs.com/package/vuepress-plugin-meilisearch"><img src="https://img.shields.io/npm/v/vuepress-plugin-meilisearch.svg" alt="npm version"></a>
   <a href="https://github.com/meilisearch/vuepress-plugin-meilisearch/actions"><img src="https://github.com/meilisearch/vuepress-plugin-meilisearch/workflows/Tests/badge.svg" alt="GitHub Workflow Status"></a>
   <a href="https://github.com/meilisearch/vuepress-plugin-meilisearch/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-informational" alt="License"></a>
-  <a href="https://app.bors.tech/repositories/28907"><img src="https://bors.tech/images/badge_small.svg" alt="Bors enabled"></a>
+  <a href="https://ms-bors.herokuapp.com/repositories/46"><img src="https://bors.tech/images/badge_small.svg" alt="Bors enabled"></a>
 </p>
 
 <p align="center">⚡ The Meilisearch plugin for VuePress</p>
