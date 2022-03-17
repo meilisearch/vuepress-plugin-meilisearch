@@ -13,10 +13,9 @@ module.exports = {
     [
       require('../../index.js'),
       {
-        // Testing with Meilisearch documentation content (https://docs.meilisearch.com/)
-        hostUrl: 'https://docs-search-bar.meilisearch.com',
+        hostUrl: 'http://localhost:7700',
         apiKey:
-          'd79226ae89f29d4dadba8d0c30c240e435f584fb83a7ae573b13eb62edec35cd',
+          'masterKey',
         indexUid: 'docs',
         debug: true,
         enableDarkMode: true
