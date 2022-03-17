@@ -2805,9 +2805,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
-  version "1.0.30001233"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001233.tgz#b7cb4a377a4b12ed240d2fa5c792951a06e5f2c4"
-  integrity sha512-BmkbxLfStqiPA7IEzQpIk0UFZFf3A4E6fzjPJ6OR+bFC2L8ES9J8zGA/asoi47p8XDVkev+WJo2I2Nc8c/34Yg==
+  version "1.0.30001317"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001317.tgz"
+  integrity sha512-xIZLh8gBm4dqNX0gkzrBeyI86J2eCjWzYAs40q88smG844YIrN4tVQl/RhquHvKEKImWWFIVh1Lxe5n1G/N+GQ==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3304,7 +3304,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-fetch@^3.1.4:
+cross-fetch@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
   integrity sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==
@@ -3760,13 +3760,13 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
-docs-searchbar.js@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-2.1.0.tgz#3ecf48f46926a425b0282546096489439573b2d4"
-  integrity sha512-lHDeJelI8NrtmTrX38rZN86BQ6pxL8QzlfMqR6dHhfAXdrpDX2nNRT51sNSg6nIuI0ubpCVyJMyncedglmK/FA==
+docs-searchbar.js@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-2.1.1.tgz#ed9519c0f39a99ad9d231963245e4fc81edd994b"
+  integrity sha512-K9QkhpLUi8KRoEoI8Gz7dOAYHSPUZ0uB3qb0QkWsq9cU+FAMCZPQoePfN9TObTKcX95AYQUXHV2cgd1StHYWrg==
   dependencies:
     autocomplete.js "^0.38.1"
-    meilisearch "0.24.0"
+    meilisearch "^0.25.0"
     to-factory "^1.0.0"
     zepto "^1.2.0"
 
@@ -6673,12 +6673,12 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-meilisearch@0.24.0:
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.24.0.tgz#a71454baac058f502b931af17069ab676fbaced6"
-  integrity sha512-qME1dsHZePBQi8qFdhbilcFzaL+oZJgUuls+FZ23hHpdhJI+iMFSmjjcfsxq5hdg2qczbCXv7yAo3Sh8xgfkgA==
+meilisearch@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.25.0.tgz#8e980fbdd36b9fe6ed606205e262418f21e64d84"
+  integrity sha512-TSIJTh5lva7WHBaoG3arNYQXuIAQkcD3BY09h2nHhjHS/wzxWKJM45x5bEC67Grw8zXihVqqmWty4a4ps4S+tg==
   dependencies:
-    cross-fetch "^3.1.4"
+    cross-fetch "^3.1.5"
 
 memory-fs@^0.4.1:
   version "0.4.1"

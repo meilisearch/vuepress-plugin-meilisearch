@@ -5,9 +5,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev"
+    "dev": "vuepress dev",
+    "setup": "node setup.js"
   },
   "dependencies": {
+    "meilisearch": "^0.25.0",
     "vuepress": "^1.4.1",
     "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
   }
