@@ -113,7 +113,7 @@ module.exports = {
         cropLength: 50, // Default: 30
         layout: 'simple', // Default: "columns"
         debug: true, // Default: false
-        enableDarkMode: true // Default: false
+        enableDarkMode: 'auto' // Default: false
       }
     ]
   ]
@@ -122,7 +122,7 @@ module.exports = {
 
 #### Dark mode
 
-You can enable dark mode by adding `enableDarkMode: true` to your configuration file.
+You can enable dark mode by adding `enableDarkMode: 'auto'` to your configuration file.
 
 To override the default theme of the search bar, you can edit your `.vuepress/styles/palette.styl` file.<br>
 A few variables are available:

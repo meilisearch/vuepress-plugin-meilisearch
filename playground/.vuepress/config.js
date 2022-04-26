@@ -18,7 +18,7 @@ module.exports = {
           'masterKey',
         indexUid: 'docs',
         debug: true,
-        enableDarkMode: true
+        enableDarkMode: 'auto'
         // "maxSuggestions": 10,
         // placeholder: 'Search as you type...'
       }
