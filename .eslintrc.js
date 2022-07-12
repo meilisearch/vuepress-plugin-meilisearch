@@ -16,7 +16,8 @@ module.exports = {
     PLACEHOLDER: 'readonly',
     LAYOUT: 'readonly',
     DEBUG: 'readonly',
-    ENABLE_DARK_MODE: 'readonly'
+    ENABLE_DARK_MODE: 'readonly',
+    CLIENT_AGENTS: 'readonly'
   },
   parserOptions: {
     parser: 'babel-eslint',

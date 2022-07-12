@@ -16,6 +16,7 @@ module.exports = {
     CROP_LENGTH: 30,
     LAYOUT: 'columns',
     DEBUG: false,
-    ENABLE_DARK_MODE: false
+    ENABLE_DARK_MODE: false,
+    CLIENT_AGENTS: []
   }
 }
