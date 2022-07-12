@@ -30,6 +30,7 @@ export default {
       hostUrl: HOST_URL,
       apiKey: API_KEY,
       indexUid: INDEX_UID,
+      clientAgents: CLIENT_AGENTS,
       meilisearchOptions: {
         limit:
           MAX_SUGGESTIONS || this.$site.themeConfig.searchMaxSuggestions || 5,

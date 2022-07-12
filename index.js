@@ -1,5 +1,7 @@
 const path = require('path')
 
+const { constructClientAgents } = require('./client_agents')
+
 module.exports = (options) => {
   return {
     alias: {
@@ -15,7 +17,8 @@ module.exports = (options) => {
       CROP_LENGTH: options.cropLength || 30,
       LAYOUT: options.layout || 'columns',
       DEBUG: options.debug || false,
-      ENABLE_DARK_MODE: options.enableDarkMode || false
+      ENABLE_DARK_MODE: options.enableDarkMode || false,
+      CLIENT_AGENTS: constructClientAgents(options.clientAgents) || []
     }
   }
 }
