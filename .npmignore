@@ -1,6 +1,13 @@
 scripts
 .editorconfig
 .eslintrc.js
+.eslintignore
+.prettierrc
 .github
 tests
 jest.config.js
+assets
+playground
+babel.config.js
+bors.toml
+CONTRIBUTING.md
