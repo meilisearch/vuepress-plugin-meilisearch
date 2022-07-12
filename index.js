@@ -18,7 +18,7 @@ module.exports = (options) => {
       LAYOUT: options.layout || 'columns',
       DEBUG: options.debug || false,
       ENABLE_DARK_MODE: options.enableDarkMode || false,
-      CLIENT_AGENTS: constructClientAgents(options.clientAgents)
+      CLIENT_AGENTS: constructClientAgents(options.clientAgents) || []
     }
   }
 }
