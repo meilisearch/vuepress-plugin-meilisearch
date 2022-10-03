@@ -91,28 +91,29 @@ export default {
     vertical-align middle
   .dsb-cursor
     background rgba($accentColor, 0.05)
+
+  // Searchbox
+  #meilisearch-search-input
+    cursor text
+    width 10rem
+    height: 2rem
+    color lighten($textColor, 25%)
+    display inline-block
+    border 1px solid darken($borderColor, 10%)
+    border-radius 2rem
+    font-size 0.9rem
+    line-height 2rem
+    padding 0 0.5rem 0 2rem
+    outline none
+    transition all .2s ease
+    &:focus
+      cursor auto
+      border-color $accentColor
+    background #fff url(assets/search.svg) 0.6rem 0.5rem no-repeat
+    background-size 1rem
+
   .meilisearch-autocomplete
     line-height: 2
-    // Searchbox
-    input
-      cursor text
-      width 10rem
-      height: 2rem
-      color lighten($textColor, 25%)
-      display inline-block
-      border 1px solid darken($borderColor, 10%)
-      border-radius 2rem
-      font-size 0.9rem
-      line-height 2rem
-      padding 0 0.5rem 0 2rem
-      outline none
-      transition all .2s ease
-      &:focus
-        cursor auto
-        border-color $accentColor
-      background #fff url(assets/search.svg) 0.6rem 0.5rem no-repeat
-      background-size 1rem
-
     // Layout "columns"
     .docs-searchbar-suggestion:not(.suggestion-layout-simple)
       border-color $borderColor
