@@ -179,7 +179,7 @@ export default {
         background $dropdownBgDarkColor
 
       // Searchbox
-      input
+      #meilisearch-search-input
         color $textDarkColor
         border 1px solid $borderDarkColor
         background-color $inputDarkBgColor
