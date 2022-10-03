@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev",
     "setup": "node setup.js"
   },
   "dependencies": {
