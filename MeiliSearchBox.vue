@@ -3,6 +3,7 @@
     id="search-form"
     class="meilisearch-search-wrapper search-box"
     role="search"
+    :class="'theme-' + theme"
   >
     <input
       id="meilisearch-search-input"
@@ -17,6 +18,7 @@ export default {
   name: 'MeiliSearchBox',
   data() {
     return {
+      theme: false,
       placeholder: undefined
     }
   },
@@ -43,6 +45,7 @@ export default {
       debug: DEBUG,
       enableDarkMode: ENABLE_DARK_MODE
     }
+    this.updateTheme(options)
     this.initialize(options)
     this.placeholder =
       PLACEHOLDER || this.$site.themeConfig.searchPlaceholder || ''
@@ -72,9 +75,20 @@ export default {
     },
 
     update(options) {
+      this.updateTheme(options)
       this.$el.innerHTML =
         '<input id="meilisearch-search-input" class="search-query">'
       this.initialize(options)
+    },
+
+    updateTheme(options) {
+      if (options.enableDarkMode === true) {
+        this.theme = 'dark'
+      } else if (options.enableDarkMode === false) {
+        this.theme = 'light'
+      } else {
+        this.theme = 'auto'
+      }
     }
   }
 }
@@ -82,6 +96,55 @@ export default {
 
 <style lang="stylus">
 @require './styles/palette.styl'
+
+light-input()
+  color lighten($textColor, 25%)
+  border 1px solid darken($borderColor, 10%)
+  background-color #fff
+  &:focus
+    border-color $accentColor
+
+dark-input()
+  color $textDarkColor
+  border 1px solid $borderDarkColor
+  background-color $inputDarkBgColor
+  &:focus
+    border-color $accentDarkColor
+
+// Searchbox
+#meilisearch-search-input
+  cursor text
+  width 10rem
+  height: 2rem
+  display inline-block
+  border-radius 2rem
+  font-size 0.9rem
+  line-height 2rem
+  padding 0 0.5rem 0 2rem
+  outline none
+  transition border .2s ease
+  background: url(assets/search.svg) 0.6rem 0.5rem no-repeat
+  &:focus
+    cursor auto
+  background-size 1rem
+
+.meilisearch-search-wrapper.theme-light
+  #meilisearch-search-input
+    light-input()
+
+.meilisearch-search-wrapper.theme-dark
+  #meilisearch-search-input
+    dark-input()
+
+@media (prefers-color-scheme: dark)
+  .meilisearch-search-wrapper.theme-auto
+    #meilisearch-search-input
+      dark-input()
+
+@media (prefers-color-scheme: light)
+  .meilisearch-search-wrapper.theme-auto
+    #meilisearch-search-input
+      light-input()
 
 .meilisearch-search-wrapper
   display: inline-block;
@@ -93,25 +156,6 @@ export default {
     background rgba($accentColor, 0.05)
   .meilisearch-autocomplete
     line-height: 2
-    // Searchbox
-    input
-      cursor text
-      width 10rem
-      height: 2rem
-      color lighten($textColor, 25%)
-      display inline-block
-      border 1px solid darken($borderColor, 10%)
-      border-radius 2rem
-      font-size 0.9rem
-      line-height 2rem
-      padding 0 0.5rem 0 2rem
-      outline none
-      transition all .2s ease
-      &:focus
-        cursor auto
-        border-color $accentColor
-      background #fff url(assets/search.svg) 0.6rem 0.5rem no-repeat
-      background-size 1rem
 
     // Layout "columns"
     .docs-searchbar-suggestion:not(.suggestion-layout-simple)
@@ -176,14 +220,6 @@ export default {
     .meilisearch-autocomplete
       .dsb-dropdown-menu [class^=dsb-dataset-], .docs-searchbar-suggestion
         background $dropdownBgDarkColor
-
-      // Searchbox
-      input
-        color $textDarkColor
-        border 1px solid $borderDarkColor
-        background-color $inputDarkBgColor
-        &:focus
-          border-color $accentDarkColor
 
       // Layout "columns"
       .docs-searchbar-suggestion:not(.suggestion-layout-simple)
