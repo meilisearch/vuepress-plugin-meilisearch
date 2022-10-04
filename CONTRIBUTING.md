@@ -43,7 +43,7 @@ You can check out the longer, more complete guideline documentation [here](https
 
 To run this project, you will need:
 
-- Node.js >= 14 and node <= 18
+- Node.js >= 14 and node <= 16
 - Yarn
 
 ### Setup <!-- omit in TOC -->
