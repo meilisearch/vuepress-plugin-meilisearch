@@ -6,7 +6,7 @@ scripts
 .github
 tests
 jest.config.js
-assets
+assets/docs-searchbar-demo.gif
 playground
 babel.config.js
 bors.toml
