@@ -82,7 +82,13 @@ export default {
     },
 
     updateTheme(options) {
-      this.theme = options.enableDarkMode === true ? 'dark' : options.enableDarkMode === false ? 'light' : 'auto'
+      if (options.enableDarkMode === true) {
+        this.theme = 'dark'
+      } else if (options.enableDarkMode === false) {
+        this.theme = 'light'
+      } else {
+        this.theme = 'auto'
+      }
     }
   }
 }
