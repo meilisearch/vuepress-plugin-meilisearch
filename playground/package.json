@@ -12,5 +12,8 @@
     "meilisearch": "^0.27.0",
     "vuepress": "^1.4.1",
     "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14 <=16"
   }
 }
