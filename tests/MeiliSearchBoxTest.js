@@ -14,7 +14,7 @@ describe('MeiliSearchBox', () => {
 
   it('renders default form and input', () => {
     expect(wrapper.html()).toContain(
-      '<form id="search-form" role="search" class="meilisearch-search-wrapper search-box">'
+      '<form id="search-form" role="search" class="meilisearch-search-wrapper search-box theme-light">'
     )
     expect(wrapper.html()).toContain(
       '<input id="meilisearch-search-input" class="search-query" placeholder="">'
