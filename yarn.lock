@@ -3779,10 +3779,10 @@ dns-txt@^2.0.2:
   dependencies:
     buffer-indexof "^1.0.0"
 
-docs-searchbar.js@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-2.3.0.tgz#38964be590de57960ccd25cf917f63225bb91053"
-  integrity sha512-Ey4PMDjZYHnmC/yXZSmSi7EWTzPPzlsHVWgA5xVuOOMoqGXyvdZCcdR1XPVISbEOG8IGwhJcuFO/urPSvyQmxg==
+docs-searchbar.js@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/docs-searchbar.js/-/docs-searchbar.js-2.4.0.tgz#d2f65e11ae8662787fc1571d682823046cb15c94"
+  integrity sha512-R5SOwIwVul6cssi+omE2h6JaFSCFp/k3xDgLKZfb6oDhF8Yed15hR1vcrKsSnF+XkNruhCJvTYoMGb9+MEPWvg==
   dependencies:
     autocomplete.js "^0.38.1"
     meilisearch "^0.28.0"
