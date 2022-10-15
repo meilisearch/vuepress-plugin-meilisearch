@@ -206,9 +206,9 @@ dark-input()
 
     // Footer
     .docs-searchbar-footer
-      display flex !important
-      justify-content space-between !important
-      align-items center !important
+      display flex 
+      justify-content space-between 
+      align-items center 
       .docs-searchbar-footer-logo
         margin-bottom -4px
     .dsb-cursor .docs-searchbar-suggestion--content
@@ -278,18 +278,18 @@ dark-input()
           width 100%
           vertical-align top
         .dsb-dropdown-menu
-          min-width 515px !important
+          min-width 515px 
 
 @media (max-width: $MQMobile)
   .meilisearch-search-wrapper
     .dsb-dropdown-menu
-      min-width calc(100vw - 4rem) !important
-      max-width calc(100vw - 4rem) !important
+      min-width calc(100vw - 4rem) 
+      max-width calc(100vw - 4rem) 
     .docs-searchbar-suggestion--wrapper
-      padding 5px 7px 5px 5px !important
+      padding 5px 7px 5px 5px 
     .docs-searchbar-suggestion--subcategory-column
-      padding 0 !important
-      background white !important
+      padding 0 
+      background white 
     .docs-searchbar-suggestion--subcategory-column-text:after
       content " > "
       font-size 10px
@@ -300,5 +300,5 @@ dark-input()
       vertical-align middle
     div[data-ds-theme="dark"]
       .docs-searchbar-suggestion--subcategory-column
-        background transparent !important
+        background transparent 
 </style>
