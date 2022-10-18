@@ -207,8 +207,9 @@ dark-input()
     // Footer
     .docs-searchbar-footer
       display flex 
-      justify-content space-between 
-      align-items center 
+      justify-content flex-end 
+      align-items center
+      column-gap 10px
       .docs-searchbar-footer-logo
         margin-bottom -4px
     .dsb-cursor .docs-searchbar-suggestion--content
