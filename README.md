@@ -28,10 +28,6 @@
 
 If you don't use VuePress for your documentation, but you still need a search bar, you might check out this [front-end SDK](https://github.com/meilisearch/docs-searchbar.js).
 
-![Meilisearch docs demo](assets/docs-searchbar-demo.gif).
-
-This plugin is used in production on the [Meilisearch documentation](https://docs.meilisearch.com/).
-
 ## Table of Contents <!-- omit in toc -->
 
 - [Usage](#usage)
