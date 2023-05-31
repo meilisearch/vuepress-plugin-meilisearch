@@ -58,7 +58,7 @@ yarn playground
 Then, open your browser on the indicated URL and test the search bar 🙂
 
 The data comes from Meilisearch documentation.<br>
-Type `create an index` to live the Meilisearch experience with the [typo tolerance](https://www.meilisearch.com/docs/learn/configuration/typo_tolerance).
+Type `create an indxe` to live the Meilisearch experience with the [typo tolerance](https://www.meilisearch.com/docs/learn/configuration/typo_tolerance).
 
 ### Installation
 
