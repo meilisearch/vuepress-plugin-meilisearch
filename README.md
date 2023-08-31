@@ -13,7 +13,7 @@ Dear Community,
 We'd like to share some updates regarding the future maintenance of this repository:
 
 Our team is small, and our availability will be reduced in the upcoming times. As such, we decided to deprecate this repository.
-This means we wont be updating the package to be compatible with VuePress v2.
+This means we won't be updating the package to be compatible with VuePress v2.
 
 We still accept bug fixes from the community but no more enhancements.
 
