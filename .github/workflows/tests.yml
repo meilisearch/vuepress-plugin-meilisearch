@@ -18,7 +18,7 @@ jobs:
         node: [ '14', '16' ]
     name: Tests (Node.js ${{ matrix.node }})
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup node
         uses: actions/setup-node@v3
         with:
@@ -32,7 +32,7 @@ jobs:
     name: linter-check
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Install dependencies
       run: yarn install
     - name: Run linter
