@@ -2,7 +2,7 @@
   "name": "vuepress-plugin-meilisearch",
   "version": "0.13.1",
   "description": "Relevant and typo tolerant search bar for your Vuepress",
-  "author": "Clémentine Urquizar <clementine@meilisearch.com>",
+  "author": "Clémentine <clementine@meilisearch.com>",
   "scripts": {
     "playground": "yarn --cwd ./playground install && yarn --cwd ./playground setup && yarn --cwd ./playground dev",
     "lint": "eslint '{.,tests}/**/*.{vue,js}'",
