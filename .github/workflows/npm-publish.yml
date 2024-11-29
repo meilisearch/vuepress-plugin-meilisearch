@@ -9,7 +9,7 @@ jobs:
   publish-npm:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Check release validity
         run: sh .github/scripts/check-release.sh
       - uses: actions/setup-node@v3
