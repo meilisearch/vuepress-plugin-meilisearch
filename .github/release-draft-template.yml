@@ -14,6 +14,11 @@ categories:
     label: 'enhancement'
   - title: '🐛 Bug Fixes'
     label: 'bug'
+  - title: '⚙️ Maintenance/misc'
+    label:
+      - 'dependencies'
+      - 'maintenance'
+      - 'documentation'
   - title: '🔒 Security'
     label: 'security'
 template: |
@@ -23,10 +28,6 @@ template: |
 no-changes-template: 'Changes will arrive soon 😎'
 sort-direction: 'ascending'
 replacers:
-  - search: '/(?:and )?@dependabot-preview(?:\[bot\])?,?/g'
-    replace: ''
-  - search: '/(?:and )?@dependabot(?:\[bot\])?,?/g'
-    replace: ''
   - search: '/(?:and )?@bors(?:\[bot\])?,?/g'
     replace: ''
   - search: '/(?:and )?@meili-bot,?/g'
