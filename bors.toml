@@ -1,7 +1,0 @@
-status = [
-    'linter-check',
-    'Tests (Node.js 14)',
-    'Tests (Node.js 16)'
-]
-# 1 hour timeout
-timeout-sec = 3600
