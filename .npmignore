@@ -9,5 +9,4 @@ jest.config.js
 assets/docs-searchbar-demo.gif
 playground
 babel.config.js
-bors.toml
 CONTRIBUTING.md
